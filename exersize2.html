@@ -52,13 +52,13 @@
             </fieldset>
             <br>
             <fieldset>
-                <p>
+                <p id="namesection">
                     <label>Name</label><br>
-                    <input type="text" placeholder="Name" name="name">
+                    <input type="text" placeholder="Name" name="name" id="name">
                 </p>
-                <p>
+                <p id="emailsection">
                     <label>Email Address</label><br>
-                    <input type="email" placeholder="E-mail" name="email">
+                    <input type="email" placeholder="E-mail" name="email" id="email">
                 </p>
                 <p>
                     <label>Telephone Number</label><br>
@@ -69,9 +69,9 @@
             </fieldset>
             <br>
             <fieldset>
-                <p>
+                <p id="addresssection">
                     <label>Address</label><br>
-                    <input type="text" placeholder="Address" name="address">
+                    <input type="text" placeholder="Address" name="address" id="address">
                 </p>
                 <p>
                     <label>City</label><br>
@@ -83,16 +83,15 @@
                         <option>Glasgow</option>
                     </datalist>
                 </p>
-                <p>
+                <p id="postcodesection">
                     <label>Postcode</label><br>
-                    <input type="text" placeholder="Postcode" name="postcode">
+                    <input type="text" placeholder="Postcode" name="postcode" id="postcode">
                 </p>
             </fieldset>
             <br>
             <div>
                 <label>Please keep me informed about future shirt designs</label>
-                <input type="checkbox" name="accept"><br>
-                <button id="checker"> CHECK INPUTS</button>
+                <input type="checkbox" name="accept" id="accept"><br>
                 <br>
                 <input type="submit" class="button"> <input type="reset" value="Clear Form" class="button">
 
