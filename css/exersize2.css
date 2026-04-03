@@ -1,0 +1,53 @@
+* {
+    font-family: Arial, sans-serif;
+    font-size: 100%;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+form {
+   
+    background-color: white;
+    padding: 0.5em;
+    border-radius: 10px;
+    border-spacing: 5rem;
+}
+
+fieldset {
+    background-color: #e5ffd8;
+    border: 1px solid green;
+}
+
+div{
+    background-color: white;
+    padding: 3rem;
+    margin: 50px;
+
+}
+
+.button{
+    align-self: center;
+    background-color: green;
+    border-radius: 5px;
+    color: white;
+    padding: 1rem;
+    margin-left: 4rem;
+}
+
+.button:hover{
+    transform: scale(1.1);
+    transition-duration: 1s;
+}
+
+legend{
+    background-color: green;
+    color: white;
+    text-align: center;
+    padding-left: 30%;
+    padding-right: 30%;
+}

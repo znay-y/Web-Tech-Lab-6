@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shirt Order Form</title>
+    <link rel="stylesheet" href="css/exersize2.css">
+    <link rel="stylesheet" href="css/reset.css">
+</head>
+
+<body>
+    <form method="post" action="https://drusmannaeem.co.uk/process.php" id="mainform">
+        <fieldset>
+            <legend>Shirt Order Form</legend>
+            <fieldset>
+                <p>
+                    <label>Shirt Size</label>
+
+                    <select name="size">
+                        <option>Choose Size</option>
+                        <option>XS</option>
+                        <option>S</option>
+                        <option>M</option>
+                        <option>L</option>
+                        <option>XL</option>
+                    </select>
+                </p>
+
+                <p>
+                    <input type="radio" name="sleeves" value="Short" checked />
+                    <label>Short</label><br>
+                    <input type="radio" name="sleeves" value="Long" />
+                    <label>Long</label>
+
+                </p>
+
+                <p>
+                    <label>Choose Shirt Colour</label><br>
+                    <input type="color" name="color">
+                </p>
+
+                <p>
+                    <label>Quantity</label><br>
+                    <input type="number" placeholder="Amount" name="quantity" min="0" max="10">
+                </p>
+
+                <p>
+                    <label>Data Requested</label><br>
+                    <input type="date" name="date">
+                </p>
+            </fieldset>
+            <br>
+            <fieldset>
+                <p>
+                    <label>Name</label><br>
+                    <input type="text" placeholder="Name" name="name">
+                </p>
+                <p>
+                    <label>Email Address</label><br>
+                    <input type="email" placeholder="E-mail" name="email">
+                </p>
+                <p>
+                    <label>Telephone Number</label><br>
+                    <input type="tel" placeholder="Telephone" name="telephone"
+                        pattern="[4]{2}-[0-9]{3}-[0-9]{3}-[0-9]{4}">
+                <p>Exmaple: 44-207-882-1234</p>
+                </p>
+            </fieldset>
+            <br>
+            <fieldset>
+                <p>
+                    <label>Address</label><br>
+                    <input type="text" placeholder="Address" name="address">
+                </p>
+                <p>
+                    <label>City</label><br>
+                    <input type="text" name="city" placeholder="City" list="cities">
+                    <datalist id="cities">
+                        <option>London</option>
+                        <option>Birmingham</option>
+                        <option>Leeds</option>
+                        <option>Glasgow</option>
+                    </datalist>
+                </p>
+                <p>
+                    <label>Postcode</label><br>
+                    <input type="text" placeholder="Postcode" name="postcode">
+                </p>
+            </fieldset>
+            <br>
+            <div>
+                <label>Please keep me informed about future shirt designs</label>
+                <input type="checkbox" name="accept"><br>
+                <button id="checker"> CHECK INPUTS</button>
+                <br>
+                <input type="submit" class="button"> <input type="reset" value="Clear Form" class="button">
+
+            </div>
+        </fieldset>
+
+    </form>
+
+    <script src="js/exersize2.js"></script>
+</body>
+
+</html>
